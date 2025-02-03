@@ -15,24 +15,38 @@
 
         <nav id="nav-visible">
             <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Formation</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#formations">Formation</a></li>
+                <li><a href="#project">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-
-        <img id="bottom-mountain" src="./img/background/2.png" alt="Moutain landscape"> <!-- mountain fixed at the bottom of the screen -->
     </header>
     <main>
         
-        <section class="section">
+        <section class="section presentation" id="presentation">
             <h2>Présentation</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nemo, corporis asperiores aut vel magni a iusto nam, iste libero necessitatibus, ea nisi! Odit ea qui assumenda itaque voluptate enim nemo, fuga corrupti eius aspernatur repellendus ipsam rem impedit earum at delectus, laborum, reprehenderit tempora veniam ullam dolores? Cumque cupiditate necessitatibus consequatur iure ab quis doloremque error vitae! Sapiente omnis cumque saepe, quam voluptate aspernatur eos odit doloribus, provident quaerat, consequatur at error nisi incidunt quibusdam excepturi eum ad autem. Aut, laboriosam. Praesentium nobis voluptatibus ipsam ducimus! Nostrum suscipit alias quas, totam maiores magni veritatis beatae? Aliquid saepe nobis nemo!</p>
+            <article>
+                <h3><i class="fa-regular fa-face-smile-wink"></i> Qui suis-je ?</h3>
+                <p>Passionné par le développement web et toujours à la recherche de nouveaux défis, j’ai choisi de me reconvertir grâce à la 3W Academy en tant qu’alternant. Autonome et motivé, je crois fermement que l’alternance est la meilleure façon d’allier théorie et pratique, et je m’engage à donner le meilleur de moi-même pour contribuer activement à des projets innovants.</p>
+            </article>
+            <article>
+                <h3><i class="fa-solid fa-magnifying-glass"></i> Ce que je recherche :</h3>
+                <p>Je suis actuellement à la recherche d’une alternance en développement web (front-end, back-end ou full-stack) à partir du 7 avril 2025. Mon objectif ? Intégrer une équipe bienveillante, travailler sur des projets stimulants et continuer à apprendre tout en apportant une réelle valeur ajoutée.</p>
+            </article>
+            <article>
+                <h3><i class="fa-solid fa-gamepad"></i> Centres d’intérêts :</h3>
+                <p>En dehors du code, je suis un passionné de jeux vidéo comme Final Fantasy 14, Valorant ou Celeste. J’aime aussi les escape games et les jeux d’énigmes, qui me permettent de stimuler ma créativité et mon esprit d’équipe.</p>
+            </article>
+            <article>
+                <h3><i class="fa-regular fa-envelope"id="contact"></i> Envie d’échanger ?</h3>
+                <button type="button">
+                    <a href="mailto:thomas.albert.jv@gmail.com">Envoyer moi un beau mail !</a>
+                </button>
+            </article>
         </section>
 
-        <section class="section">
+        <section class="section" id="formations">
             <h2>Formation</h2>
             <ul id="tab-formations">
                 <li>
@@ -62,18 +76,23 @@
             </ul>
         </section>
 
-        <section class="section">
-            <h2>Présentation</h2>
+        <section class="section" id="project">
+            <h2>Projets</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nemo, corporis asperiores aut vel magni a iusto nam, iste libero necessitatibus, ea nisi! Odit ea qui assumenda itaque voluptate enim nemo, fuga corrupti eius aspernatur repellendus ipsam rem impedit earum at delectus, laborum, reprehenderit tempora veniam ullam dolores? Cumque cupiditate necessitatibus consequatur iure ab quis doloremque error vitae! Sapiente omnis cumque saepe, quam voluptate aspernatur eos odit doloribus, provident quaerat, consequatur at error nisi incidunt quibusdam excepturi eum ad autem. Aut, laboriosam. Praesentium nobis voluptatibus ipsam ducimus! Nostrum suscipit alias quas, totam maiores magni veritatis beatae? Aliquid saepe nobis nemo!</p>
         </section>
 
         <section class="section">
-            <h2>Présentation</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nemo, corporis asperiores aut vel magni a iusto nam, iste libero necessitatibus, ea nisi! Odit ea qui assumenda itaque voluptate enim nemo, fuga corrupti eius aspernatur repellendus ipsam rem impedit earum at delectus, laborum, reprehenderit tempora veniam ullam dolores? Cumque cupiditate necessitatibus consequatur iure ab quis doloremque error vitae! Sapiente omnis cumque saepe, quam voluptate aspernatur eos odit doloribus, provident quaerat, consequatur at error nisi incidunt quibusdam excepturi eum ad autem. Aut, laboriosam. Praesentium nobis voluptatibus ipsam ducimus! Nostrum suscipit alias quas, totam maiores magni veritatis beatae? Aliquid saepe nobis nemo!</p>
+            <h2>Ressources utilisés</h2>
+            <ul>
+                <li><p>Source du paysage en pixel arts : <a href="https://opengameart.org/content/simple-nature-pixel-background-for-video-game" target="blank">OpenGameArt</a></p></li>
+                <li><p>Logo pris de <a href="https://fontawesome.com/" target="blank"><i class="fa-solid fa-font-awesome"></i>FontAwesome</a></p></li>
+                <li><p>Code du portfolio disponnible sur mon <a href="https://github.com/ThomasAlbt" target="blank"><i class="fa-brands fa-github"></i> GitHub</a></p></li>
+            </ul>
         </section>
     </main>
     <footer>
-        
+        <div id="spacer"></div>
+        <img id="bottom-mountain" src="./img/background/2.png" alt="Moutain landscape"> <!-- mountain fixed at the bottom of the screen -->
     </footer>
     <script src="js/script.js"></script>
 </body>

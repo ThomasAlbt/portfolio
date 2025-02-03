@@ -24,25 +24,69 @@ main {
         }
     }
 
+    /* PRESENTATION */
+
+    .presentation {
+        
+        article {
+
+            h3 {
+                font-family: 'jersey';
+                font-size: 1.5em;
+                text-shadow: 2px 2px $dark_blue;
+            }
+
+            p {
+                padding: 1em 0em;
+            }
+
+            button {
+                background-color: $cool_yellow;
+                padding: 1em;
+                border: none;
+                border-bottom: solid 2px $chill_orange;
+                border-right: solid 2px $chill_orange;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-shadow: $chill_orange;
+                    font-family: 'jersey';
+                    font-size: 15px;
+                }
+            }
+
+            button:active {
+                background-color: $chill_orange;
+                border-bottom: solid 2px $cool_yellow;
+                border-right: solid 2px $cool_yellow;
+            }
+        }
+        
+    }
+
     /* FORMATIONS */
 
     #tab-formations{
-
+        
         h3 {
             font-family: 'jersey';
             font-size: 1.5em;
             text-shadow: 2px 2px $dark_blue;
         }
-        
+
         p {
             padding: 1em 0em;
         }
 
         .work {
             list-style: square;
-            background-color: $cool_yellow;
-            border-bottom: solid 2px $chill_orange;
-            border-right: solid 2px $chill_orange;
+            background-color: $nice_green_v2;
+            border-bottom: solid 2px $dark_blue_v2;
+            border-right: solid 2px $dark_blue_v2;
             border-radius: 5px;
             padding: 0.5em 1.5em;
             margin-bottom: 1em;
