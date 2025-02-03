@@ -20,42 +20,6 @@ header {
         left: 0%;
     }
 
-    #nav {
-        display: block; /* Initialement masqué */
-        position: fixed; /* Le menu reste fixé à l'écran */
-        top: 5%;
-        right: -150px;
-        width: 150px;
-        height: 100vh;
-        padding-top: 0px;
-        overflow-y: auto; /* Si le contenu du menu est trop long, une barre de défilement verticale apparaîtra pour permettre la navigation. */
-        transition: transform 0.5 cubic-bezier(.44,-0.22,.41,1.24);
-        transition: all 1s;
-
-        ul {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 10px;
-
-            li {
-                background-color: $cool_yellow;
-                padding: 1em;
-                border-bottom: solid 2px $chill_orange;
-                border-right: solid 2px $chill_orange;
-                border-radius: 5px;
-                text-align: center;
-                font-size: 15px;
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-        }
-    }
-
     #nav-visible {
         ul {
 

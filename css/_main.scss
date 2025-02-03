@@ -1,51 +1,5 @@
 main {
 
-    /* BURGER NAV */
-    .burger-menu {
-        position: sticky;
-        z-index: 2;
-        top: 5%;
-        left: 5%;
-        width: 45px;
-        background-color: $cool_yellow;
-        border-radius: 3px;
-        border-right: solid 2px $chill_orange;
-        border-bottom: solid 2px $chill_orange;
-        padding: 5px;
-    }
-    
-    .burger-menu div {
-        margin: 5px;
-        border: 2px solid white;
-        width: 30px;
-        transition: all 1s;
-    }
-    nav.open {
-        transform: translateX(-150px); /* Lorsque la classe "open" est ajoutée au menu, le menu se déplace de 250px vers la gauche pour s'afficher, ramenant ainsi la partie cachée du menu dans la vue. */
-    }
-    
-    .burger-menu.open div:nth-of-type(2) {
-        opacity: 0;
-    }
-    
-    .burger-menu.open div:nth-of-type(1), .burger-menu.open div:nth-of-type(3) {
-        transition: all 1s;
-    }
-    
-    .burger-menu.open div:nth-of-type(1) {
-        transform: 
-            rotate(45deg)
-            translateY(5px)
-            translateX(8px);
-    }
-    
-    .burger-menu.open div:nth-of-type(3) {
-        transform: 
-            rotate(-45deg)
-            translateY(-5px)
-            translateX(8px);
-    }
-
     /* MAIN BODY */
 
     color: white;
