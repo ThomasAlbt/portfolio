@@ -1,0 +1,102 @@
+main {
+
+    /* BURGER NAV */
+    .burger-menu {
+        position: sticky;
+        z-index: 2;
+        top: 5%;
+        left: 5%;
+        width: 45px;
+        background-color: $cool_yellow;
+        border-radius: 3px;
+        border-right: solid 2px $chill_orange;
+        border-bottom: solid 2px $chill_orange;
+        padding: 5px;
+    }
+    
+    .burger-menu div {
+        margin: 5px;
+        border: 2px solid white;
+        width: 30px;
+        transition: all 1s;
+    }
+    nav.open {
+        transform: translateX(-150px); /* Lorsque la classe "open" est ajoutée au menu, le menu se déplace de 250px vers la gauche pour s'afficher, ramenant ainsi la partie cachée du menu dans la vue. */
+    }
+    
+    .burger-menu.open div:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.open div:nth-of-type(1), .burger-menu.open div:nth-of-type(3) {
+        transition: all 1s;
+    }
+    
+    .burger-menu.open div:nth-of-type(1) {
+        transform: 
+            rotate(45deg)
+            translateY(5px)
+            translateX(8px);
+    }
+    
+    .burger-menu.open div:nth-of-type(3) {
+        transform: 
+            rotate(-45deg)
+            translateY(-5px)
+            translateX(8px);
+    }
+
+    /* MAIN BODY */
+
+    color: white;
+    width: 80%;
+    margin: auto;
+
+    .section {
+        margin-top: 1em;
+        padding: 1em;
+        background-color: $nice_green;
+        border-bottom: solid 2px $dark_blue;
+        border-right: solid 2px $dark_blue;
+        border-radius: 5px;
+
+        h2 {
+            text-align: center;
+            font-family: "jersey";
+            font-weight: bold;
+            text-shadow: 2px 2px $dark_blue;
+            font-size: 2em;
+            padding-bottom: 1em;
+        }
+    }
+
+    /* FORMATIONS */
+
+    #tab-formations{
+
+        h3 {
+            font-family: 'jersey';
+            font-size: 1.5em;
+            text-shadow: 2px 2px $dark_blue;
+        }
+        
+        p {
+            padding: 1em 0em;
+        }
+
+        .work {
+            list-style: square;
+            background-color: $cool_yellow;
+            border-bottom: solid 2px $chill_orange;
+            border-right: solid 2px $chill_orange;
+            border-radius: 5px;
+            padding: 0.5em 1.5em;
+            margin-bottom: 1em;
+
+            li {
+                padding: 0.5em 0;
+            }
+        }
+
+    }
+}

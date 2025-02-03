@@ -1,0 +1,83 @@
+header {
+    font-family: 'jersey';
+    text-align: center;
+    color: $cool_yellow;
+    padding-bottom: 2em;
+
+    h1 {
+        font-size: 5em;
+        text-shadow: 5px 5px 10px $chill_orange;
+    }
+
+    p {
+        text-shadow: 2px 2px 10px $chill_orange;
+        padding-bottom: 1em;
+    }
+
+    #bottom-mountain {
+        position: fixed;
+        bottom: -15%;
+        left: 0%;
+    }
+
+    #nav {
+        display: block; /* Initialement masqué */
+        position: fixed; /* Le menu reste fixé à l'écran */
+        top: 5%;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 0px;
+        overflow-y: auto; /* Si le contenu du menu est trop long, une barre de défilement verticale apparaîtra pour permettre la navigation. */
+        transition: transform 0.5 cubic-bezier(.44,-0.22,.41,1.24);
+        transition: all 1s;
+
+        ul {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+
+            li {
+                background-color: $cool_yellow;
+                padding: 1em;
+                border-bottom: solid 2px $chill_orange;
+                border-right: solid 2px $chill_orange;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #nav-visible {
+        ul {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                background-color: $cool_yellow;
+                padding: 1em;
+                border-bottom: solid 2px $chill_orange;
+                border-right: solid 2px $chill_orange;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 15px;
+                width: 25%;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

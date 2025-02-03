@@ -1,0 +1,18 @@
+@import "_colors";
+@import "_fonts";
+@import "_varsImg";
+
+/* FRONT IMPORT */
+
+@import "_header";
+@import "_main";
+
+
+html {
+    font-family: geologica;
+    background-image: $sky;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
