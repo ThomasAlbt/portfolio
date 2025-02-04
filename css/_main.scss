@@ -97,4 +97,52 @@ main {
         }
 
     }
+
+    /* PROJETS */
+
+    #project {
+
+        h3 {
+            font-family: 'jersey';
+            font-size: 1.5em;
+            text-shadow: 2px 2px $dark_blue;
+        }
+
+        p {
+            padding: 1em 0em;
+        }
+    }
+
+    /* RESSOURCES */
+
+    #ressources {
+
+        p {
+            padding: 1em 0em;
+        }
+
+        ul {
+            list-style: square;
+            background-color: $nice_green_v2;
+            border-bottom: solid 2px $dark_blue_v2;
+            border-right: solid 2px $dark_blue_v2;
+            border-radius: 5px;
+            padding: 0.5em 1.5em;
+            margin-bottom: 1em;
+
+            li {
+                padding: 0.5em 0;
+            }
+        }
+    }
+
+    @media #{$medium} {
+        font-size: 1.5em;
+    }
+
+    @media #{$large} {
+        font-size: 1em;
+    }
 }
+
+

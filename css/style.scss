@@ -2,11 +2,16 @@
 @import "_fonts";
 @import "_varsImg";
 
+/* RESPONSIVE */
+
+@import "_responsive";
+
 /* FRONT IMPORT */
 
 @import "_header";
 @import "_main";
 @import "_footer";
+
 
 html {
     font-family: geologica;

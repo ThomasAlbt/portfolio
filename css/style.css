@@ -18,6 +18,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* RESPONSIVE */
 /* FRONT IMPORT */
 header {
   font-family: "jersey";
@@ -52,6 +53,14 @@ header #nav-visible ul li a {
   text-decoration: none;
   color: white;
 }
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 1.5em;
+  }
+  header ul li a {
+    font-size: 1.5em;
+  }
+}
 
 main {
   /* MAIN BODY */
@@ -60,6 +69,8 @@ main {
   margin: auto;
   /* PRESENTATION */
   /* FORMATIONS */
+  /* PROJETS */
+  /* RESSOURCES */
 }
 main .section {
   margin-top: 1em;
@@ -127,14 +138,80 @@ main #tab-formations .work {
 main #tab-formations .work li {
   padding: 0.5em 0;
 }
+main #project h3 {
+  font-family: "jersey";
+  font-size: 1.5em;
+  text-shadow: 2px 2px #264653;
+}
+main #project p {
+  padding: 1em 0em;
+}
+main #ressources p {
+  padding: 1em 0em;
+}
+main #ressources ul {
+  list-style: square;
+  background-color: #1e6d64;
+  border-bottom: solid 2px #3b6474;
+  border-right: solid 2px #3b6474;
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  margin-bottom: 1em;
+}
+main #ressources ul li {
+  padding: 0.5em 0;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main {
+    font-size: 1em;
+  }
+}
 
 footer #bottom-mountain {
   position: fixed;
-  bottom: -18%;
+  bottom: -120px;
   left: 0%;
+  z-index: 2;
 }
 footer #spacer {
   height: 20vh;
+}
+footer .bottom-plains {
+  display: none;
+}
+footer .bottom-flowers {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  footer .bottom-plains {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    bottom: 0%;
+    z-index: 2;
+  }
+  footer #bottom-mountain {
+    position: fixed;
+    bottom: -3%;
+    left: 0%;
+  }
+  footer .bottom-flowers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    bottom: 0%;
+    z-index: 3;
+  }
+  footer #spacer {
+    height: 20vh;
+  }
 }
 
 html {

@@ -1,11 +1,50 @@
 footer {
     #bottom-mountain {
         position: fixed;
-        bottom: -18%;
+        bottom: -120px;
         left: 0%;
+        z-index: 2;
     }
 
     #spacer {
         height: 20vh;
+    }
+
+    .bottom-plains {
+        display: none;
+    }
+
+    .bottom-flowers {
+        display: none;
+    }
+
+    @media #{$medium} {
+
+        .bottom-plains {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: fixed;
+            bottom: 0%;
+            z-index: 2;
+        }
+        
+        #bottom-mountain {
+            position: fixed;
+            bottom: -3%;
+            left: 0%;
+        }
+        .bottom-flowers {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: fixed;
+            bottom: 0%;
+            z-index: 3;
+        }
+        
+        #spacer {
+            height: 20vh;
+        }
     }
 }
