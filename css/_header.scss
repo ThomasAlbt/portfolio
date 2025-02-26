@@ -1,52 +1,61 @@
 header {
-    font-family: 'jersey';
+    font-family: "jersey";
     text-align: center;
-    color: $cool_yellow;
+    color: #E9C46A;
     padding-bottom: 2em;
-
+  
     h1 {
-        font-size: 5em;
-        text-shadow: 5px 5px 10px $chill_orange;
+      font-size: 5em;
+      text-shadow: 5px 5px 10px #F4A261;
     }
-
+  
     p {
-        text-shadow: 2px 2px 10px $chill_orange;
-        padding-bottom: 1em;
+      text-shadow: 2px 2px 10px #F4A261;
+      padding-bottom: 1em;
     }
-
+  
     #nav-visible {
-        ul {
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            li {
-                background-color: $cool_yellow;
-                padding: 1em;
-                border-bottom: solid 2px $chill_orange;
-                border-right: solid 2px $chill_orange;
-                border-radius: 5px;
-                text-align: center;
-                font-size: 15px;
-                width: 25%;
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+  
+        li {
+          width: auto;
+  
+          button {
+            background-color: #E9C46A;
+            padding: 1em;
+            border: none;
+            border-bottom: solid 2px #F4A261;
+            border-right: solid 2px #F4A261;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            font-family: "jersey";
+            cursor: pointer;
+            padding: 1em;
+  
+            &:hover {
+              animation: hover-animation 0.3s ease;
             }
-        }
-    }
-    @media #{$medium} {
-        font-size: 1.5em;
-
-        ul {
-            li {
-                a {
-                    font-size: 1.5em; 
-                }
+  
+            &:active {
+              background-color: #F4A261;
+              border-bottom: solid 2px #E9C46A;
+              border-right: solid 2px #E9C46A;
             }
+          }
         }
+      }
     }
-}
+  
+    @media only screen and (min-width: 768px) {
+  
+        #nav-visible ul li button {
+            font-size: 1.5em;
+            padding: 1em 2em 1em 2em;
+          }
+    }
+  }

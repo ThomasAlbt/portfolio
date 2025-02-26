@@ -40,37 +40,41 @@ header #nav-visible ul {
   justify-content: space-around;
 }
 header #nav-visible ul li {
+  width: auto;
+}
+header #nav-visible ul li button {
   background-color: #E9C46A;
   padding: 1em;
+  border: none;
   border-bottom: solid 2px #F4A261;
   border-right: solid 2px #F4A261;
   border-radius: 5px;
   text-align: center;
   font-size: 15px;
-  width: 25%;
-}
-header #nav-visible ul li a {
-  text-decoration: none;
   color: white;
+  font-family: "jersey";
+  cursor: pointer;
+  padding: 1em;
+}
+header #nav-visible ul li button:hover {
+  animation: hover-animation 0.3s ease;
+}
+header #nav-visible ul li button:active {
+  background-color: #F4A261;
+  border-bottom: solid 2px #E9C46A;
+  border-right: solid 2px #E9C46A;
 }
 @media only screen and (min-width: 768px) {
-  header {
+  header #nav-visible ul li button {
     font-size: 1.5em;
-  }
-  header ul li a {
-    font-size: 1.5em;
+    padding: 1em 2em 1em 2em;
   }
 }
 
 main {
-  /* MAIN BODY */
   color: white;
   width: 80%;
   margin: auto;
-  /* PRESENTATION */
-  /* FORMATIONS */
-  /* PROJETS */
-  /* RESSOURCES */
 }
 main .section {
   margin-top: 1em;
@@ -112,6 +116,9 @@ main .presentation article button a {
   text-shadow: #F4A261;
   font-family: "jersey";
   font-size: 15px;
+}
+main .presentation article button:hover {
+  animation: hover-animation 0.3s ease;
 }
 main .presentation article button:active {
   background-color: #F4A261;
@@ -161,17 +168,17 @@ main #ressources ul {
 main #ressources ul li {
   padding: 0.5em 0;
 }
+
 @media only screen and (min-width: 768px) {
   main {
     font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 1200px) {
-  main {
+  p {
     font-size: 1em;
   }
 }
-
 footer #bottom-mountain {
   position: fixed;
   bottom: -120px;
@@ -221,4 +228,27 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hover-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=style.css.map */
