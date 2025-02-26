@@ -1,0 +1,51 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .leaf {
+    position: fixed;
+    top: -100px;
+    width: 30px;
+    height: auto;
+    opacity: 0;
+    animation: fall linear infinite;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .leaf1 {
+      left: 10%;
+      animation-duration: 10s;
+      animation-delay: 0s;
+    }
+  
+    .leaf2 {
+      left: 30%;
+      animation-duration: 12s;
+      animation-delay: 2s;
+    }
+  
+    .leaf3 {
+      left: 50%;
+      animation-duration: 14s;
+      animation-delay: 4s;
+    }
+  
+    .leaf4 {
+      left: 70%;
+      animation-duration: 16s;
+      animation-delay: 6s;
+    }
+  
+    .leaf5 {
+      left: 90%;
+      animation-duration: 18s;
+      animation-delay: 8s;
+    }
+  }
